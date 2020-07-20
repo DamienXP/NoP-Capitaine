@@ -7,11 +7,6 @@ bot.on('ready', function () {
 
 bot.login(precess.env.TOKEN)
 
-var prefix = ("Coucou");
-
-if(message.content === prefix + "@help"){
-   message.channel.send("Tu a besoins t'aide ?")
-}
 bot.on ('message', msg => {
   if (msg.content === 'ping') {
       msg.channel.send ('pong');
