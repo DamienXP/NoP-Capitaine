@@ -5,11 +5,4 @@ bot.on('ready', function () {
   console.log("Je suis connecté !")
 })
 
-bot.login(precess.env.TOKEN)
-
-bot.on ('message', msg => {
-  if (msg.content === 'ping') {
-      msg.channel.send ('pong');
-     
-  }
-});
+bot.login('NzM0NDY3MDI5Mjg4ODc4MTQy.XxTzDg.q18uqh03VTTpYhHUtf4TEUuioyc')
