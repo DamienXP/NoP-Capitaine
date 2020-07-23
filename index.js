@@ -8,7 +8,7 @@ bot.on('ready', function () {
   console.log("Je suis connecté !")
 })
 
-bot.login("NzM0NDY3MDI5Mjg4ODc4MTQy.XxWL9A.SBQLdk9svD4DIPhB5r09CmW96Oc")
+bot.login("NzM0NDY3MDI5Mjg4ODc4MTQy.Xxju1g.QyZdcADOk9eNzPFlp1J6qppWasA")
 
 bot.on('message', message => {
     if (message.content === '-instagram') {
