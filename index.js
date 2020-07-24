@@ -1,4 +1,4 @@
-﻿const Discord = require('discord.js');
+const Discord = require('discord.js');
 const bot = new Discord.Client();
 var prefix = "--VOTRE PREFIXE--"
 var token = process.env.TOKEN
@@ -55,5 +55,9 @@ bot.on('message', msg => {
   }
 });
 
-
-bot.login("process.env.TOKEN");
+bot.on('guildMemberAdd', member => {
+  member.createDM().then(channel => {
+    return channel.send('Bienvenue sur mon server discord ' + member.displayName)
+  }).catch(console.error)
+  // On pourrait catch l'erreur autrement ici (l'utilisateur a peut être désactivé les MP)
+})
