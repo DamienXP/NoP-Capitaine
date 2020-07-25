@@ -63,6 +63,4 @@ bot.on('guildMemberAdd', member => {
 })
 
 
-
-
 bot.login("
